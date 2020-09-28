@@ -45,11 +45,11 @@ tx.commit();
 ```
 
 Spring 的模块：
-	- Core Container（核心模块）
-		○ 控制反转（IOC）inversion of control   设计思想
-		○ 依赖注入（dependency injection）     实现形式
-	- Web：Spring MVC
-	- AOP（Aspect Oriented Programming）
+- Core Container（核心模块）
+	- 控制反转（IOC）inversion of control   设计思想
+	-依赖注入（dependency injection）     实现形式
+- Web：Spring MVC
+- AOP（Aspect Oriented Programming）
 
 ## Inversion of Control & Dependency Injection:
 面向对象的程序通过一组对象之间相互通信来实现特定功能，这里的通信具体来说就是一个对象对另一个对象的方法调用或者属性访问。
@@ -99,9 +99,9 @@ a = paymentAction
 
 b = Logger
 a依赖b，但a不控制b的创建和销毁，仅使用b，那么b的控制权交给a之外处理，这叫控制反转（IOC）。而a要依赖b，必然要使用b的instance，那么
-	1. 通过a的构造函数，把b传入；（Constructor）
-	2. 通过设置a的属性，把b传入；（setter method）
-	3. @Autowired 
+1. 通过a的构造函数，把b传入；（Constructor）
+2. 通过设置a的属性，把b传入；（setter method）
+3. @Autowired 
 
 这个过程叫依赖注入。
 
