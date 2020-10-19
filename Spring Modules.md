@@ -52,6 +52,8 @@ Spring 的模块：
 - AOP（Aspect Oriented Programming）
 
 ## Inversion of Control & Dependency Injection:
+![IOC](/images/IOC.png)
+
 面向对象的程序通过一组对象之间相互通信来实现特定功能，这里的通信具体来说就是一个对象对另一个对象的方法调用或者属性访问。
 ```java
 public interface ILogger {
